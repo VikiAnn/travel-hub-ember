@@ -12,7 +12,7 @@ let Post = DS.Model.extend({
   longitude: DS.attr('string'),
   link: DS.attr('string'),
   likes: DS.attr('number')
-})
+});
 
 Post.reopenClass({
   FIXTURES: [
