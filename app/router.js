@@ -8,6 +8,7 @@ var Router = Ember.Router.extend({
 Router.map(function() {
   this.resource('users', function() {});
   this.resource('posts', function() {});
+  this.resource('trips', function() {});
 });
 
 export default Router;
