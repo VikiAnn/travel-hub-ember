@@ -11,7 +11,7 @@ let Post = DS.Model.extend({
   latitude: DS.attr('string'),
   longitude: DS.attr('string'),
   link: DS.attr('string'),
-  likes: DS.attr('number')
+  likes: DS.attr('number', { defaultValue: 0 })
 });
 
 Post.reopenClass({
@@ -27,8 +27,7 @@ Post.reopenClass({
       "locationName": "Bermuda, I dunno",
       "latitude": "bermuda triangle x",
       "longitude": "bermuda triangle y",
-      "link": "http://twitter.com",
-      "likes": 0
+      "link": "http://twitter.com"
     },
     {
       "id": 2,
@@ -41,8 +40,7 @@ Post.reopenClass({
       "locationName": "Bermuda, I dunno",
       "latitude": "bermuda triangle x",
       "longitude": "bermuda triangle y",
-      "link": "http://twitter.com",
-      "likes": 0
+      "link": "http://twitter.com"
     },
     {
       "id": 3,
@@ -55,8 +53,7 @@ Post.reopenClass({
       "locationName": "Bermuda, I dunno",
       "latitude": "bermuda triangle x",
       "longitude": "bermuda triangle y",
-      "link": "http://twitter.com",
-      "likes": 0
+      "link": "http://twitter.com"
     },
     {
       "id": 4,
@@ -69,8 +66,7 @@ Post.reopenClass({
       "locationName": "Bermuda, I dunno",
       "latitude": "bermuda triangle x",
       "longitude": "bermuda triangle y",
-      "link": "http://twitter.com",
-      "likes": 0
+      "link": "http://twitter.com"
     },
     {
       "id": 5,
@@ -83,8 +79,7 @@ Post.reopenClass({
       "locationName": "Bermuda, I dunno",
       "latitude": "bermuda triangle x",
       "longitude": "bermuda triangle y",
-      "link": "http://twitter.com",
-      "likes": 0
+      "link": "http://twitter.com"
     }
   ]
 });

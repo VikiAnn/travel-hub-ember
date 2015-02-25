@@ -4,8 +4,7 @@ import {
 } from 'ember-qunit';
 
 moduleForModel('trip', {
-  // Specify the other units that are required for this test.
-  needs: []
+  needs: ['model:user', 'model:post']
 });
 
 test('it exists', function(assert) {
