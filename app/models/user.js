@@ -5,8 +5,8 @@ let User = DS.Model.extend({
   trips: DS.hasMany('trips', { async: true }),
   name: DS.attr('string'),
   email: DS.attr('string'),
-  instagram_username: DS.attr('string'),
-  twitter_username: DS.attr('string')
+  instagramUsername: DS.attr('string'),
+  twitterUsername: DS.attr('string')
 });
 
 User.reopenClass({
@@ -15,8 +15,8 @@ User.reopenClass({
       "id": 1,
       "name": "Jorge Tellez",
       "email": "jorge@example.com",
-      "instagram_username": "jorge_on_instagram",
-      "twitter_username": "jorge_on_twitter",
+      "instagramUsername": "jorge_on_instagram",
+      "twitterUsername": "jorge_on_twitter",
       "posts": [1, 2],
       "trips": [2, 3]
     },
@@ -24,8 +24,8 @@ User.reopenClass({
       "id": 2,
       "name": "Rachel Warbelow",
       "email": "rachel@example.com",
-      "instagram_username": "rachel_on_instagram",
-      "twitter_username": "rachel_on_twitter",
+      "instagramUsername": "rachel_on_instagram",
+      "twitterUsername": "rachel_on_twitter",
       "posts": [3, 4],
       "trips": [1]
     },
@@ -33,8 +33,8 @@ User.reopenClass({
       "id": 3,
       "name": "Jeff Casimir",
       "email": "jeff@example.com",
-      "instagram_username": "jeff_on_instagram",
-      "twitter_username": "jeff_on_twitter",
+      "instagramUsername": "jeff_on_instagram",
+      "twitterUsername": "jeff_on_twitter",
       "posts": [5],
       "trips": [3]
     },
@@ -42,8 +42,8 @@ User.reopenClass({
       "id": 4,
       "name": "Steve Kinney",
       "email": "steve@example.com",
-      "instagram_username": "steve_on_instagram",
-      "twitter_username": "steve_on_twitter",
+      "instagramUsername": "steve_on_instagram",
+      "twitterUsername": "steve_on_twitter",
       "posts": [],
       "trips": [1]
     }
