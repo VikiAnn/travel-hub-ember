@@ -28,7 +28,7 @@ test('it has posts', function(assert) {
   assert.equal(relationship.kind, 'hasMany');
 });
 
-test('it has posts', function(assert) {
+test('it has trips', function(assert) {
   var User = this.store().modelFor('user');
   var relationship = Ember.get(User, 'relationshipsByName').get('trips');
 

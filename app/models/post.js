@@ -1,7 +1,7 @@
 import DS from 'ember-data';
 
 let Post = DS.Model.extend({
-  userID: DS.attr('number'),
+  user: DS.belongsTo('user'),
   postDate: DS.attr('date'),
   source: DS.attr('string'),
   text: DS.attr('string'),
