@@ -1,0 +1,24 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+
+#splash-section {
+  background: url("http://i.imgur.com/YJhHj7k.jpg") no-repeat center center;
+  @include background-size(cover);
+  text-align: center;
+  border-bottom: 10px solid rgba(0,0,0,0.5);
+}
+
+#title {
+  margin: 20vh 0% 0% 0%;;
+  color: white;
+  font-size: 500%;
+}
+
+#trip-section {
+  text-align: center;
+  border-bottom: 10px solid grey;  // just a measurement.
+}
+
+#dest-img {
+  height: 40vh;
+  width:  50vh;
+}
