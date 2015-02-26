@@ -1,9 +1,7 @@
-{{#each trip in content}}
-  <div class='trip'>
-    <p>{{trip.name}}</p>
-    <p>{{trip.start_date}}</p>
-    <p>{{trip.end_date}}</p>
-  </div>
-{{/each}}
+<ul class="trips">
+  {{#each trip in content}}
+    <li>{{trip.name}} - ({{trip.startDate}} to {{trip.endDate}})</li>
+  {{/each}}
+</ul>
 
 {{outlet}}

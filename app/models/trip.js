@@ -2,9 +2,9 @@ import DS from 'ember-data';
 
 let Trip = DS.Model.extend({
   name:       DS.attr('string'),
-  startDate: DS.attr("date"),
+  startDate: DS.attr("string"),
   users:      DS.hasMany('users', { async: true }),
-  endDate:   DS.attr("date")
+  endDate:   DS.attr("string")
 });
 
 Trip.reopenClass({

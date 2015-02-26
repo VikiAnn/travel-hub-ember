@@ -5,29 +5,23 @@
 </div>
 {{/if}}
 
-<h1>{{name}}</h1>
-
-<div class="trip-dates">
-  {{startDate}} to {{endDate}}
-</div>
-
 <div class="well">
   <div class="panel panel-default">
     <div class="panel-body">
       <div class="form-group">
         <label>Trip Name</label>
-        {{input type="text" value=name class="form-control"}}
+        {{input type="text" value=name class="name form-control"}}
       </div>
       <div class="form-group">
         <label>When does your trip start?</label>
-        {{input type="date" value=startDate class="form-control"}}
+        {{input type="text" value=startDate class="start-date form-control"}}
       </div>
       <div class="form-group">
         <label>When does your trip end?</label>
-        {{input type="date" value=endDate class="form-control"}}
+        {{input type="text" value=endDate class="end-date form-control"}}
       </div>
     </div>
   </div>
 
-  <button class="btn btn-default" {{action 'saveTrip'}}>Save Trip</button>
+  <button class="btn btn-default submit" {{action 'saveTrip'}}>Save Trip</button>
 </div>
