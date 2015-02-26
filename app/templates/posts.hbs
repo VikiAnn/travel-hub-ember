@@ -1,9 +1,12 @@
-{{#each post in model}}
-  <div class="post">
-    <p>{{post.postDate}}</p>
-    <p>{{post.text}}</p>
-    <img {{bind-attr src=post.imageUrl}}>
-    <img {{bind-attr src=post.thumbnailUrl}}>
-    <p>{{post.locationName}}
+<body id="feed">
+  <div class="small-6 small-centered columns">
+    {{#each post in content}}
+      <img {{bind-attr src=post.thumbnailUrl}}> {{post.user.name}} posted on {{post.source}}:
+      <div class="post">
+        <p>{{post.postDate}}</p>
+        <p>{{post.text}}</p>
+        <p>{{post.locationName}}
+      </div>
+    {{/each}}
   </div>
-{{/each}}
+</body>

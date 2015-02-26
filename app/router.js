@@ -12,6 +12,7 @@ Router.map(function() {
     this.resource('trip', { path: ':trip_id' });
     this.route('new');
   });
+  this.route('index', { path: '/' });
 });
 
 export default Router;
