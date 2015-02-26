@@ -29,13 +29,13 @@ test('it has a name', function (assert) {
 
 test('it has a start date', function (assert) {
   var property = Trip.metaForProperty('startDate');
-  assert.strictEqual(property.type, 'date');
+  assert.strictEqual(property.type, 'string');
   assert.ok(property.isAttribute);
 });
 
 test('it has a end date', function (assert) {
   var property = Trip.metaForProperty('endDate');
-  assert.strictEqual(property.type, 'date');
+  assert.strictEqual(property.type, 'string');
   assert.ok(property.isAttribute);
 });
 
