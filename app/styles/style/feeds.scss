@@ -1,3 +1,67 @@
-#ember368 {
+#ember368  {
   background-color: #f5f1e8;
+}
+body#posts-index  {
+  background: #f5f1e8 !important;
+  background-color: #f5f1e8 !important;
+}
+
+header {
+  width: 322px;
+  height: 51px;
+  background-color: #ff6861;
+  display: table;
+  font-size: 18px;
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
+  border-radius: 5px;
+}
+
+header span {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  cursor: default;
+}
+
+header span:first-child,
+header span:last-child {
+  width: 56px;
+  font-family: entypo;
+  cursor: pointer;
+  font-size: 22px;
+}
+
+header span:first-child:hover,
+header span:last-child:hover {
+  background-color: #f3625b;
+}
+
+header span.first {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+header span:last-child {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.post {
+  background-color: #fff;
+  margin-top: 21px;
+  border-radius: 5px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14.5px;
+  color: #ff6862;
+  font-weight: bold;
+}
+
+.post img {
+  height: 60px;
+  width: 60px;
+  border-radius: 5px;
+}
+
+.post p {
 }
