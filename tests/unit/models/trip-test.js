@@ -39,10 +39,10 @@ test('it has a end date', function (assert) {
   assert.ok(property.isAttribute);
 });
 
-test('it has users', function (assert) {
+test('it has a user', function (assert) {
   var Trip = this.store().modelFor('trip');
-  var relationship = Ember.get(Trip, 'relationshipsByName').get('users');
+  var relationship = Ember.get(Trip, 'relationshipsByName').get('user');
 
-  assert.equal(relationship.key, 'users');
-  assert.equal(relationship.kind, 'hasMany');
+  assert.equal(relationship.key, 'user');
+  assert.equal(relationship.kind, 'belongsTo');
 });
