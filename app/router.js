@@ -9,10 +9,10 @@ Router.map(function() {
   this.resource('users', function() {});
   this.resource('posts', function() {});
   this.resource('trips', function() {
-    this.resource('trip', { path: ':trip_id' });
     this.route('new');
   });
   this.route('index', { path: '/' });
+  this.resource('trip', { path: 'trips/:trip_id' });
 });
 
 export default Router;

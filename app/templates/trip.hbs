@@ -1,0 +1,12 @@
+<div class="small-6 small-centered columns">
+  {{#each user in model.users}}
+    {{log user}}
+    <img {{bind-attr src=post.thumbnailUrl}}> {{post.user.name}} posted on {{post.source}}:
+    <div class="post">
+      <p>{{post.postDate}}</p>
+      <p>{{post.text}}</p>
+      <p>{{post.locationName}}
+    </div>
+  {{/each}}
+</div>
+STUFF SHOW ME
