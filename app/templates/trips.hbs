@@ -1,6 +1,6 @@
 <ul class="trips">
   {{#each trip in content}}
-    <li>{{trip.name}} - ({{trip.startDate}} to {{trip.endDate}})</li>
+  <li>{{#link-to 'trip' trip}}{{trip.name}} - ({{trip.startDate}} to {{trip.endDate}}){{/link-to}}</li>
       <ul>
         {{#each user in trip.users}}
           <li>{{user.name}}</li>
