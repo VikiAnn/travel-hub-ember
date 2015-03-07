@@ -20,7 +20,8 @@ module.exports = function(environment) {
   };
 
   ENV['simple-auth'] = {
-    authorizer: 'simple-auth-authorizer:devise'
+    authorizer: 'simple-auth-authorizer:devise',
+    crossOriginWhitelist: ['*']
   };
 
   if (environment === 'development') {
