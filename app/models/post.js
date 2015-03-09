@@ -11,7 +11,8 @@ let Post = DS.Model.extend({
   latitude: DS.attr('string'),
   longitude: DS.attr('string'),
   link: DS.attr('string'),
-  likes: DS.attr('number', { defaultValue: 0 })
+  likes: DS.attr('number', { defaultValue: 0 }),
+  username: DS.attr('string')
 });
 
 Post.reopenClass({

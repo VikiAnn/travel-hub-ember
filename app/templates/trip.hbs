@@ -1,6 +1,6 @@
 <div class="small-6 small-centered columns">
   {{#each post in content.posts}}
-    <img {{bind-attr src=post.thumbnailUrl}}> {{post.user.name}} posted on {{post.source}}:
+    <img {{bind-attr src=post.thumbnailUrl}}> {{post.username}} posted on {{post.source}}:
     <div class="post">
       <p>{{post.postDate}}</p>
       <p>{{post.text}}</p>
