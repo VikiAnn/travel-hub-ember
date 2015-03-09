@@ -6,12 +6,13 @@ export default Ember.Controller.extend({
   name: null,
   startDate: null,
   endDate: null,
-  users: null,
+  twitterAccounts: null,
+  instagramAccounts: null,
 
   actions: {
 
     saveTrip: function () {
-      let newTrip = this.getProperties('name', 'startDate', 'endDate');
+      let newTrip = this.getProperties('name', 'startDate', 'endDate', 'twitterAccounts', 'instagramAccounts');
 
       this.store.createRecord('trip', newTrip).save();
     }
