@@ -5,33 +5,9 @@ let Trip = DS.Model.extend({
   startDate: DS.attr("string"),
   user:      DS.belongsTo('user', { async: true }),
   posts: DS.hasMany('posts', { async: true }),
-  endDate:   DS.attr("string")
-});
-
-Trip.reopenClass({
-  FIXTURES: [
-    {
-      "id": 1,
-      "name": "Steve's Emacs Trip",
-      "startDate": "01/13/2013",
-      "endDate": "01/13/2014",
-      "users": [2, 4]
-    },
-    {
-      "id": 2,
-      "name": "Jorge's Mexico Trip",
-      "startDate": "07/13/2015",
-      "endDate": "07/23/2015",
-      "users": [1]
-    },
-    {
-      "id": 3,
-      "name": "Worace's Ski Trip",
-      "startDate": "02/13/2014",
-      "endDate": "03/1/2014",
-      "users": [1, 3]
-    }
-  ]
+  endDate:   DS.attr("string"),
+  twitterAccounts: DS.attr("string"),
+  instagramAccounts: DS.attr("string")
 });
 
 export default Trip;
