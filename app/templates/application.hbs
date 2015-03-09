@@ -13,10 +13,10 @@
     <ul class="right">
       {{#if session.isAuthenticated}}
         <li><a {{ action 'invalidateSession'  }}>Logout</a></li>
+        <li><a href="/trips">Trips</a></li>
       {{else}}
         <li>{{#link-to 'login'}}Login{{/link-to}}</li>
         <li><a href="#">Sign Up</a></li>
-        <li><a href="/trips">Trips</a></li>
       {{/if}}
     </ul>
 
